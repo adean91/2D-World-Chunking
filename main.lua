@@ -3,7 +3,7 @@ io.stdout:setvbuf("no")
 local world = require("world")
 
 function love.load()
-	world:randomize()
+	world:randomize(16,16,32,32,1, {50,50})
 end
 
 function love.update(dt)
